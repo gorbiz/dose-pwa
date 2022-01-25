@@ -1,9 +1,4 @@
 # Setup dev server
-```sh
-# consider making this a devDependency
-npm i -g http-server
-
-# Setup dev server
 Requirements:
  - `mkcert` ex. `sudo pacman -Syu mkcert`
  - `127.0.0.1  dose.dev` in `/etc/hosts
@@ -17,7 +12,7 @@ npm start
 # Deploy to test server
 
 ```sh
-rsync -avzh --exclude .git --exclude node_modules ./* cloud:fillthatvoid.com/
+rsync -avzh --exclude .git --exclude node_modules * cloud:dev.lifefeed.me
 ```
 # Generate icons
 ```sh
