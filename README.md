@@ -15,6 +15,11 @@ http-server --ssl --cert .ssl/cert.pem --key .ssl/key.pem
 # Open https://dose.dev:8080
 ```
 
+# Deploy to test server
+
+```sh
+rsync -avzh --exclude .git --exclude node_modules ./* cloud:fillthatvoid.com/
+```
 # Generate icons
 ```sh
 npm run make-icons
