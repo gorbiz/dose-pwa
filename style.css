@@ -1,4 +1,9 @@
 html {
-  background: #212;
-  color: #eee;
+  background : #212;
+  color      : #eae;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 8em;
 }
