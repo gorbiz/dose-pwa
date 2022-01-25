@@ -3,16 +3,15 @@
 # consider making this a devDependency
 npm i -g http-server
 
-# We also need SSL
-sudo pacman -Syu mkcert
-mkcert -install
-mkdir -p .ssl
-echo .ssl >> .gitignore
-mkcert -key-file .ssl/key.pem -cert-file .ssl/cert.pem dose.dev
-# add dose.dev to /etc/hosts
+# Setup dev server
+Requirements:
+ - `mkcert` ex. `sudo pacman -Syu mkcert`
+ - `127.0.0.1  dose.dev` in `/etc/hosts
 
-http-server --ssl --cert .ssl/cert.pem --key .ssl/key.pem
-# Open https://dose.dev:8080
+```sh
+npm install
+npm start
+# And open https://dose.dev:8080 (or whichever is rePORTed)
 ```
 
 # Deploy to test server
