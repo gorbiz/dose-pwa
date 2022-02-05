@@ -1,4 +1,32 @@
 html {
+  --main-bg-color   : #fff;
+  --omnibar-bg-color: transparent --omnibar-text-color: var(--main-bg-color);
+  --main-text-color : rgba(0, 0, 0, 1);
+  --border-color    : grey;
+  --log-border-color: rgba(0, 0, 0, .2);
+
+  height     : 100%;
+  color      : var(--main-text-color);
+  font-family: Arial;
+}
+
+html.dark {
+  --main-bg-color   : #0b020e;
+  --omnibar-bg-color: transparent --omnibar-text-color: var(--main-bg-color);
+  --main-text-color : rgba(255, 255, 255, 0.5);
+  --border-color    : grey;
+  --log-border-color: rgba(255, 255, 255, .2);
+}
+
+body {
+  background: var(--main-bg-color);
+  margin    : 0;
+  min-height: 100%;
+}
+/* html, body {
+  margin: 0;
+} */
+html {
   background : #212;
   color      : #eae;
   font-family: Helvetica;
@@ -6,4 +34,16 @@ html {
 
 h1 {
   font-size: 8em;
+}
+
+input#omnibar {
+  /* width: 100%; */
+  font-size: 1.75em;
+  padding: 0.5em 0.75em;
+  border: 0;
+  background: rgba(255, 255, 255, 0.025);
+  color: #eee;
+}
+input#omnibar:focus {
+  outline-width: 0;
 }

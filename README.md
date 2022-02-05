@@ -1,3 +1,5 @@
+⚠️⚠️⚠️ WARNING moved to https://github.com/gorbiz/dose
+
 # Setup dev server
 Requirements:
  - `mkcert` ex. `sudo pacman -Syu mkcert`
